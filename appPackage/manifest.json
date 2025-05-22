@@ -4,10 +4,10 @@
     "version": "1.0.0",
     "id": "${{TEAMS_APP_ID}}",
     "developer": {
-        "name": "My App, Inc.",
-        "websiteUrl": "https://www.example.com",
-        "privacyUrl": "https://www.example.com/privacy",
-        "termsOfUseUrl": "https://www.example.com/termofuse"
+        "name": "Okahu, Inc.",
+        "websiteUrl": "https://okahu.ai",
+        "privacyUrl": "https://www.okahu.ai/agreements/privacy-policy",
+        "termsOfUseUrl": "https://www.okahu.ai/agreements/evaluation-agreement"
     },
     "icons": {
         "color": "color.png",
@@ -15,13 +15,13 @@
     },
     "name": {
         "short": "employee-teams-basic-bot${{APP_NAME_SUFFIX}}",
-        "full": "full name for employee-teams-basic-bot"
+        "full": "Okahu Employee Q&A bot"
     },
     "description": {
-        "short": "short description for employee-teams-basic-bot",
-        "full": "full description for employee-teams-basic-bot"
+        "short": "Bot to answers employee's questions",
+        "full": "An M365 agent that answers employees questions about HR policies."
     },
-    "accentColor": "#FFFFFF",
+    "accentColor": "#F26C74",
     "bots": [
         {
             "botId": "${{BOT_ID}}",
@@ -41,10 +41,6 @@
                         {
                             "title": "How can you help me?",
                             "description": "How can you help me?"
-                        },
-                        {
-                            "title": "How to develop agent for Teams?",
-                            "description": "How can I develop agents with Microsoft 365 Agents Toolkit?"
                         }
                     ]
                 }
