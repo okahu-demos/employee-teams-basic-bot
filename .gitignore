@@ -1,7 +1,7 @@
 # TeamsFx files
 env/.env.*.user
 env/.env.local
-env/.env.playground
+env/.env.playground.user
 .env
 appPackage/build
 

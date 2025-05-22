@@ -1,12 +1,10 @@
 # Basic AI Chatbot for Employees in Teams
 
-This app demonstrates how open-source [Monocle](#about-monocle) and [Okahu Cloud](#about-okahu) is used to monitor AI-enabled automated experiences for Microsoft 365. 
-
-The M365 agentic app is built on top of [Teams AI library](https://aka.ms/teams-ai-library).
+This M365 agentic app is built on top of [Teams AI library](https://aka.ms/teams-ai-library) demonstrates how open-source [Monocle](#about-monocle) and [Okahu Cloud](#about-okahu) is used to monitor AI-enabled automated experiences. 
 
 ### About Monocle 
 
-<img src="assets/img/basic-team-bot-okahu.png" width="320">
+<img src="assets/basic-team-bot-okahu.png">
 
 [Monocle](http://monocle2ai.org/) is a GenAI-native community driven open source project created to simplify instrumentation of AI apps so app developers can built high impact, safe and reliable AI apps. 
 
@@ -25,8 +23,14 @@ Okahu Cloud is built by a team of AI, observability and cloud engineers from [Ok
 
 ### Configure
 1. In VS Code, open the command box and enter `Python: Create Environment` to create and activate your desired virtual environment. Remember to select `src/requirements.txt` as dependencies to install when creating the virtual environment.
-1. In file *env/.env.local.user*, fill in your Azure OpenAI key `SECRET_AZURE_OPENAI_API_KEY`, deployment name `AZURE_OPENAI_MODEL_DEPLOYMENT_NAME` and endpoint `AZURE_OPENAI_ENDPOINT`.
-1. In file .env, fill in your Okahu API key `OKAHU_API_KEY`.
+1. Create a file `env/.env.playground.user` and enter the following environment variables: 
+```
+AZURE_OPENAI_API_KEY=
+AZURE_OPENAI_MODEL_DEPLOYMENT_NAME=
+AZURE_OPENAI_ENDPOINT=
+OKAHU_API_KEY=
+```
+
 
 ### Conversation with agent
 1. Select the Microsoft 365 Agents Toolkit icon on the left in the VS Code toolbar.
