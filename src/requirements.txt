@@ -1,0 +1,4 @@
+python-dotenv
+aiohttp
+teams-ai>=1.6.0,<2.0.0
+monocle_apptrace>=0.4.0b1
