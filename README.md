@@ -44,6 +44,16 @@ OKAHU_API_KEY=
 
 **Congratulations**! You are running an application that can now interact with users in Teams and monitor how it works using Okahu Cloud. 
 
+### Deploy to Azure + M365 
+
+1. Create a file `env/.env.dev.user` and enter the following environment variables: 
+```
+AZURE_OPENAI_API_KEY=
+AZURE_OPENAI_MODEL_DEPLOYMENT_NAME=
+AZURE_OPENAI_ENDPOINT=
+OKAHU_API_KEY=
+```
+
 ### Experiment
 
 | File                                 | Changes                                           |
