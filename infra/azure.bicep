@@ -9,6 +9,10 @@ param azureOpenaiKey string
 param azureOpenaiModelDeploymentName string
 param azureOpenaiEndpoint string
 
+@secure()
+@description('Required to send traces to Okahu Cloud')  
+param OkahuApiKey string
+
 param webAppSKU string
 param linuxFxVersion string
 
@@ -74,6 +78,10 @@ resource webApp 'Microsoft.Web/sites@2021-02-01' = {
         {
           name: 'AZURE_OPENAI_ENDPOINT'
           value: azureOpenaiEndpoint
+        }
+        {
+          name: 'OKAHU_API_KEY'
+          value: OkahuApiKey
         }
         {
           name: 'BOT_TENANT_ID'

@@ -14,6 +14,9 @@
     "azureOpenaiEndpoint" : {
       "value": "${{AZURE_OPENAI_ENDPOINT}}"
     },
+    "OkahuApiKey" : {
+      "value": "${{OKAHU_API_KEY}}"
+    },
     "webAppSKU": {
       "value": "B1"
     },
