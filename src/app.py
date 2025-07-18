@@ -24,6 +24,11 @@ async def on_messages(req: web.Request) -> web.Response:
 
     return web.Response(status=HTTPStatus.OK)
 
+@routes.get("/")
+async def on_ping(req: web.Request) -> web.Response:
+    return web.Response(status=HTTPStatus.OK)
+
+
 app = web.Application(middlewares=[aiohttp_error_middleware])
 app.add_routes(routes)
 
