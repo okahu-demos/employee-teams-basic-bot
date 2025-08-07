@@ -8,7 +8,9 @@ This M365 agentic app is built on top of [Teams AI library](https://aka.ms/teams
 
 [Monocle](http://monocle2ai.org/) is a GenAI-native community driven open source project created to simplify instrumentation of AI apps so app developers can built high impact, safe and reliable AI apps. 
 
-Monocle is currently a [Sandbox](https://lfaidata.foundation/projects/monocle/) project in Linux Foundation AI & Data. In it's first iteration, Monocle helps app developers make GenAI apps observable without having to write last-mile monitoring code. 
+Monocle is currently a [Sandbox](https://lfaidata.foundation/projects/monocle/) project in Linux Foundation AI & Data. In its first iteration, Monocle helps app developers make GenAI apps observable without having to write last-mile monitoring code. 
+
+Check out [PyPI](https://pypi.org/project/monocle-apptrace/) for release history of Monocle Python package. 
 
 ### About Okahu Cloud 
 
