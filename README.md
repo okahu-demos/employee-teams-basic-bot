@@ -2,6 +2,8 @@
 
 This M365 agentic app is built on top of [Teams AI library](https://aka.ms/teams-ai-library) demonstrates how open-source [Monocle](#about-monocle) and [Okahu Cloud](#about-okahu) is used to monitor AI-enabled automated experiences. 
 
+This demo is managed by *Okahu*.[^1] 
+
 ### About Monocle 
 
 <img src="assets/basic-team-bot-okahu.png">
