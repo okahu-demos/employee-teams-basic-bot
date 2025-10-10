@@ -2,4 +2,4 @@ python-dotenv
 aiohttp
 openai==1.97.1
 teams-ai>=1.6.0,<2.0.0
-monocle_apptrace>=0.5.0b1
+monocle_apptrace>=0.6.0

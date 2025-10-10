@@ -3,8 +3,8 @@ Copyright (c) Microsoft Corporation. All rights reserved.
 Licensed under the MIT License.
 """
 # Enable Monocle Tracing
-from monocle_apptrace import setup_monocle_telemetry
-setup_monocle_telemetry(workflow_name = 'employee-teams-basic-bot', monocle_exporters_list = 'okahu')
+# from monocle_apptrace import setup_monocle_telemetry
+# setup_monocle_telemetry(workflow_name = 'employee-teams-basic-bot', monocle_exporters_list = 'okahu')
 
 from http import HTTPStatus
 
