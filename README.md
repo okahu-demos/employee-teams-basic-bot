@@ -41,6 +41,43 @@ OKAHU_API_KEY=
 1. Press F5 to start debugging which launches your app in Teams using a web browser. Select `Debug in Microsoft 365 Agent Playground`.
 1. You will receive a welcome message from the agent, or send any message to get a response.
 
+#### Manual (CLI) option
+If you prefer to run everything manually from the terminal:
+
+1) Start the bot locally
+
+```bash
+# From repo root
+python3 -m venv .venv
+source .venv/bin/activate
+
+# Install Python dependencies
+pip install -r src/requirements.txt
+
+# Provide required environment (use your values)
+export AZURE_OPENAI_API_KEY="<your-key>"
+export AZURE_OPENAI_MODEL_DEPLOYMENT_NAME="<your-deployment-name>"
+export AZURE_OPENAI_ENDPOINT="https://<your-resource>.openai.azure.com/"
+
+# Start the bot (listens on http://localhost:3978/api/messages)
+cd src
+python app.py
+```
+
+Tip: You can alternatively create a `.env` file in `src/` with the variables above and keep the values out of your shell history.
+
+2) Run the Microsoft Teams App Test Tool against your bot
+
+```bash
+# In a new terminal (same repo root)
+npx @microsoft/teams-app-test-tool --help
+npx @microsoft/teams-app-test-tool -e http://localhost:3978/api/messages -c emulator
+```
+
+Notes
+- Channel `emulator` requires no Microsoft Entra auth and is ideal for local testing.
+- If the port is busy, change `Config.PORT` or pass a different `-e` URL.
+
 ### Observability of agent 
 1. Open Okahu Cloud Portal (http://portal.okahu.co) and click `Discover` under Applications > Components tab. 
 2. Visualize traces from `Traces` tab and prompts from `Prompts` tab. 
