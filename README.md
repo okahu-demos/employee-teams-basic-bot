@@ -33,7 +33,9 @@ AZURE_OPENAI_API_KEY=
 AZURE_OPENAI_MODEL_DEPLOYMENT_NAME=
 AZURE_OPENAI_ENDPOINT=
 OKAHU_API_KEY=
+OKAHU_INGESTION_ENDPOINT=
 ```
+   These environment variables are automatically loaded when you run the bot in VS Code (F5 → "Start Python") or in the Agents Playground.
 
 
 ### Conversation with agent

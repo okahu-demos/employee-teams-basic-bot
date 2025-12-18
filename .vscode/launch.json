@@ -62,7 +62,8 @@
       "request": "launch",
       "program": "${workspaceFolder}/src/app.py",
       "cwd": "${workspaceFolder}/src",
-      "console": "integratedTerminal"
+      "console": "integratedTerminal",
+      "envFile": "${workspaceFolder}/env/.env.playground.user"
     },
     {
         "name": "Start Microsoft 365 Agents Playground",
